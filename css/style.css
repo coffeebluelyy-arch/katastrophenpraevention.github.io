@@ -283,3 +283,80 @@ body {
     line-height: 1;
     cursor: pointer;
 }
+
+@media (max-width: 1024px) and (min-width: 768px) {
+    .hero-header,
+    .sticky-bar {
+        width: 100%;
+        box-sizing: border-box;
+        padding-inline: 24px;
+    }
+
+    .hero-title {
+        font-size: 72px;
+    }
+
+    .sticky-text {
+        font-size: 32px;
+        line-height: 1.1;
+        max-width: calc(100% - 210px);
+    }
+
+    .sticky-icons {
+        gap: 16px;
+        flex-shrink: 0;
+    }
+
+    .media-section {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        grid-template-columns: 1fr;
+        gap: 32px;
+        margin: 48px 0;
+        padding-inline: 24px;
+    }
+
+    .left-column {
+        width: 100%;
+        min-width: 0;
+        gap: 48px;
+    }
+
+    .image-grid {
+        width: 100%;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-rows: auto auto auto;
+        gap: 24px;
+    }
+
+    .img-1,
+    .img-2,
+    .img-3,
+    .img-4 {
+        grid-column: auto;
+        grid-row: auto;
+        aspect-ratio: 1 / 1;
+    }
+
+    .img-wide {
+        grid-column: 1 / -1;
+        grid-row: auto;
+        aspect-ratio: 2 / 1;
+    }
+
+    .sticky-side {
+        position: static;
+        width: 100%;
+    }
+
+    .img-tall {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 3 / 2;
+    }
+
+    .dummy-content {
+        min-height: auto;
+    }
+}
