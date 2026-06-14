@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isabelle Main</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js" defer></script>
+</head>
+<body>
+    <header class="hero-header">
+        <h1 class="hero-title">WAS WÄRE WENN...</h1>
+    </header>
+
+    <div class="sticky-bar">
+        <div class="sticky-text">Krisen- und Katastrophenprävention in Deutschland</div>
+
+        <div class="sticky-icons">
+            <a class="icon-link" href="./" aria-label="Startseite">
+                <img src="./images/Rectangle 110.png" alt="" class="icon-img">
+            </a>
+
+            <div class="header-tool search-tool">
+                <button class="icon-link icon-button" id="searchToggle" aria-label="Suche öffnen" type="button">
+                    <img src="./images/Group 95.png" alt="" class="icon-img">
+                </button>
+
+                <div class="search-panel" id="searchPanel">
+                    <div class="search-dummy">Suche...</div>
+                </div>
+            </div>
+
+            <div class="header-tool menu-tool">
+                <button class="icon-link icon-button" id="menuToggle" aria-label="Menü öffnen" type="button">
+                    <img src="./images/Group 94.png" alt="" class="icon-img">
+                </button>
+
+                <div class="menu-panel" id="menuPanel">
+                    <a href="#">Krisen-Flyer</a>
+                    <a href="#">Wissenswertes</a>
+                    <a href="#">About</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="media-section">
+        <div class="left-column">
+            <div class="image-grid">
+                <img src="./images/Hochwasser.png" alt="Hochwasser" class="img-box img-1 modal-trigger"
+                     data-title="Hochwasser"
+                     data-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
+
+                <img src="./images/Unwetter.png" alt="Sturzflut" class="img-box img-2 modal-trigger"
+                     data-title="Sturzflut"
+                     data-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.">
+
+                <img src="./images/Stromausfall.png" alt="Stromausfall" class="img-box img-3 modal-trigger"
+                     data-title="Stromausfall"
+                     data-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.">
+
+                <img src="./images/Hitzewelle.png" alt="Hitzewelle" class="img-box img-4 modal-trigger"
+                     data-title="Hitzewelle"
+                     data-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.">
+
+                <img src="./images/Wissenswertes.png" alt="Wissenswertes" class="img-box img-wide">
+            </div>
+
+            <section class="dummy-content">
+                <h2>Superwichtige Informationen!!! (⁎˃ᆺ˂)</h2>
+                <p>Vergiss nicht Wasser zu trinken! Stay hydrated!</p>
+            </section>
+        </div>
+
+        <aside class="sticky-side">
+            <img src="./images/Druckmaterial.png" alt="Druckmaterial" class="img-box img-tall">
+        </aside>
+    </section>
+
+    <div class="modal" id="infoModal" aria-hidden="true">
+        <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+            <button class="modal-close" id="modalClose" aria-label="Popup schließen">
+                <span aria-hidden="true">×</span>
+            </button>
+            <h2 id="modalTitle">Titel</h2>
+            <p id="modalText">Text</p>
+        </div>
+    </div>
+</body>
+</html>
