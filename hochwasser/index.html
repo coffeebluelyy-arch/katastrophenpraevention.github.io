@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hochwasser</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js" defer></script>
+</head>
+<body>
+<header class="hero-header">
+    <img src="../images/hochwasser_title_big.png" alt="HOCHWASSER" class="hero-title-image">
+</header>
+
+<div class="sticky-bar">
+    <div class="sticky-text-image-wrap">
+        <img src="../images/hochwasser_title_small.png" alt="Was soll ich tun?" class="sticky-text-image">
+    </div>
+
+    <div class="sticky-icons">
+        <a class="icon-link" href="../index.html" aria-label="Startseite">
+            <img src="../images/Rectangle 110.png" alt="" class="icon-img">
+        </a>
+
+        <div class="header-tool search-tool">
+            <button class="icon-link icon-button" id="searchToggle" aria-label="Suche öffnen" type="button">
+                <img src="../images/Group 95.png" alt="" class="icon-img">
+            </button>
+
+            <div class="search-panel" id="searchPanel">
+                <div class="search-dummy">Suche...</div>
+            </div>
+        </div>
+
+        <div class="header-tool menu-tool">
+            <button class="icon-link icon-button" id="menuToggle" aria-label="Menü öffnen" type="button">
+                <img src="../images/Group 94.png" alt="" class="icon-img">
+            </button>
+
+            <div class="menu-panel" id="menuPanel">
+                <img src="../images/menu.png" alt="Menü" class="menu-panel-image">
+
+                <button class="menu-hitbox menu-close-hitbox" type="button" data-menu-close aria-label="Menü schließen"></button>
+
+                <a href="../wissenswertes/index.html" class="menu-hitbox menu-link-hitbox menu-hitbox-wissenswertes" aria-label="Zu Wissenswertes"></a>
+
+                <a href="../krisen-flyer/index.html" class="menu-hitbox menu-link-hitbox menu-hitbox-krisenflyer" aria-label="Zu Krisen-Flyer"></a>
+
+                <a href="../hochwasser/index.html" class="menu-hitbox menu-link-hitbox menu-hitbox-hochwasser" aria-label="Zu Hochwasser"></a>
+
+                <a href="#about" class="menu-hitbox menu-link-hitbox menu-hitbox-about" aria-label="Zu About"></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<main class="subpage-layout">
+    <section class="subpage-content">
+        <div class="hochwasser-shell">
+            <div class="hochwasser-stack">
+                <img src="../images/hochwasser1.png" alt="Hochwasser 1" class="hochwasser-image">
+
+                <section class="hochwasser-toggle-panel" aria-label="Hochwasser Phasen">
+                    <div class="hochwasser-toggle-bg" aria-hidden="true"></div>
+
+                    <div class="hochwasser-toggle-content">
+                        <div class="toggle-module" data-toggle-group="davor" data-state="open">
+                            <img src="../images/davor_open.png" alt="Davor geöffnet" class="toggle-image is-active" data-variant="open">
+                            <img src="../images/davor_closed.png" alt="Davor eingeklappt" class="toggle-image" data-variant="closed">
+                            <button class="toggle-hitbox" type="button" aria-label="Davor umschalten"></button>
+                        </div>
+
+                        <div class="toggle-module" data-toggle-group="waerend" data-state="closed">
+                            <div class="toggle-open-layer">
+                                <img src="../images/waerend_open.png" alt="Während geöffnet" class="toggle-image" data-variant="open">
+                                <a href="./regionale-informationen/index.html"
+                                   class="waerend-open-hitbox"
+                                   aria-label="Zu den regionalen Informationen"></a>
+                            </div>
+
+                            <img src="../images/waerend_closed.png" alt="Während eingeklappt" class="toggle-image is-active" data-variant="closed">
+                            <button class="toggle-hitbox" type="button" aria-label="Während umschalten"></button>
+                        </div>
+
+                        <div class="toggle-module" data-toggle-group="danach" data-state="closed">
+                            <img src="../images/danach_open.png" alt="Danach geöffnet" class="toggle-image" data-variant="open">
+                            <img src="../images/danach_closed.png" alt="Danach eingeklappt" class="toggle-image is-active" data-variant="closed">
+                            <button class="toggle-hitbox" type="button" aria-label="Danach umschalten"></button>
+                        </div>
+                    </div>
+                </section>
+
+                <a href="../wissenswertes/index.html">
+                    <img src="../images/hochwasserblue.png" alt="Hochwasser Blue" class="hochwasser-image">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <aside class="sticky-side subpage-side">
+        <a href="../krisen-flyer/index.html" class="side-image-link" aria-label="Zum Krisen-Flyer">
+            <img src="../images/Druckmaterial.png" alt="Druckmaterial" class="img-box img-tall">
+        </a>
+    </aside>
+</main>
+
+    <footer class="site-footer" id="about">
+        <div class="footer-column footer-names">
+            <p>Created by ₍ᐢ. .ᐢ₎</p>
+            <p>Name1, Name2, Name3, Name4</p>
+        </div>
+
+        <div class="footer-column footer-rights">
+            <p>All rights reserved</p>
+        </div>
+
+        <div class="footer-column footer-logos">
+            <img src="../images/logo_1.png" alt="Logo 1" class="footer-logo">
+            <img src="../images/logo_2.png" alt="Logo 2" class="footer-logo">
+            <img src="../images/logo_3.png" alt="Logo 3" class="footer-logo">
+        </div>
+    </footer>
+</body>
+</html>
